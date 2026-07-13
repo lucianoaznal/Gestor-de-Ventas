@@ -1,0 +1,129 @@
+# depslib dependency file v1.0
+1783978948 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\main.cpp
+	<iostream>
+	"controllers/MCliente.h"
+	"ui/Menu.h"
+
+1783911500 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\producto.cpp
+	"producto.h"
+
+1783911443 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\producto.h
+	<cstring>
+
+1783726050 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\data\fproducto.cpp
+
+1783909595 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fproducto.cpp
+	"../repositories/FProducto.h"
+
+1783909532 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fproducto.h
+	<cstring>
+	<iostream>
+	<fstream>
+	"../entities/producto.h"
+
+1783901990 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\manager.cpp
+	"Manager.h"
+
+1783969932 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\manager.h
+	"../ui/UIBase.h"
+	<iostream>
+
+1783952443 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uibase.h
+	<iostream>
+	"../include/rlutil.h"
+
+1783952552 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uibase.cpp
+	"UIBase.h"
+
+1783970659 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mproducto.cpp
+	"MProducto.h"
+
+1783913803 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mproducto.h
+	"Manager.h"
+	"../repositories/FProducto.h"
+	"../entities/producto.h"
+	"../ui/UIProducto.h"
+
+1783913233 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uiproducto.cpp
+	"UIProducto.h"
+
+1783772910 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uiproducto.h
+	"UIBase.h"
+	"../entities/producto.h"
+	<iomanip>
+	<iostream>
+
+1783952503 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\menu.cpp
+	"Menu.h"
+
+1783952503 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\menu.h
+	<iostream>
+	"UIBase.h"
+
+1776488679 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\include\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1783978948 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\fecha.cpp
+	"Fecha.h"
+
+1783973141 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\fecha.h
+	<iostream>
+	<ctime>
+	"../controllers/Manager.h"
+
+1783978629 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\domicilio.cpp
+	"Domicilio.h"
+
+1783976981 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\domicilio.h
+	<iostream>
+	<cstring>
+
+1783973782 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\persona.cpp
+	"Persona.h"
+
+1783973782 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\persona.h
+	"Domicilio.h"
+	"Fecha.h"
+
+1783960953 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\cliente.cpp
+	"Cliente.h"
+
+1783960953 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\cliente.h
+	"Persona.h"
+
+1783961019 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fcliente.cpp
+	"../repositories/FCliente.h"
+
+1783960747 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fcliente.h
+	"../entities/Cliente.h"
+
+1783978789 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mcliente.cpp
+	"MCliente.h"
+	"../ui/UICliente.h"
+
+1783974229 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mcliente.h
+	"Manager.h"
+	"../repositories/FCliente.h"
+	"../entities/Cliente.h"
+	"../ui/UICliente.h"
+
+1783975235 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uicliente.cpp
+	"UICliente.h"
+
+1783973098 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uicliente.h
+	"UIBase.h"
+	"../entities/Cliente.h"
+	<iomanip>
+	<iostream>
+

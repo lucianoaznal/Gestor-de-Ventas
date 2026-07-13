@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Final Programacion" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Final Programacion" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Final Programacion" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="controllers/MProducto.cpp" />
+		<Unit filename="controllers/MProducto.h" />
+		<Unit filename="controllers/Manager.cpp" />
+		<Unit filename="controllers/Manager.h" />
+		<Unit filename="entities/producto.cpp" />
+		<Unit filename="entities/producto.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="repositories/FProducto.cpp" />
+		<Unit filename="repositories/FProducto.h" />
+		<Unit filename="ui/Menu.cpp" />
+		<Unit filename="ui/Menu.h" />
+		<Unit filename="ui/UIBase.cpp" />
+		<Unit filename="ui/UIBase.h" />
+		<Unit filename="ui/UIProducto.cpp" />
+		<Unit filename="ui/UIProducto.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
