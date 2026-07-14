@@ -57,25 +57,21 @@ void MProducto::eliminar(){
     registro = archivo.buscarPorId(_id);
     clearW();
     if(registro.getId() != -1){
-        std::cout << "==================================================================" << std::endl;
-        UIProductos::showRow(registro);
-        std::cout << "==================================================================" << std::endl;
+        UIProductos::showRegister(registro);
         if(!UIBase::confirm("Esta seguro que desea eliminar el registro ?")){
             UIBase::clearW();
             std::cout << "No se elimino el registro." << std::endl;
-            UIBase::pause();
         }else{
             UIBase::clearW();
             registro.setEstado(false);
             archivo.modificar(registro,archivo.buscarPosicionPorId(_id));
             std::cout << "Registro eliminado." << std::endl;
-            UIBase::pause();
         }
     }
     else{
         std::cout << "No se encontró el registro." << std::endl;
     }
-
+    pause();
 }
 
 

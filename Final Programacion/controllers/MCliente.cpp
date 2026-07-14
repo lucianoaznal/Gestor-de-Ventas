@@ -22,7 +22,7 @@ void MCliente::listar(){
             c++;
         }
 
-        if(c == 5){
+        if(c == 10){
             c = 0;
             pause();
             clearW();
@@ -49,7 +49,6 @@ void MCliente::cargar(){
     domicilio.Cargar();
     registro.setDomicilio(domicilio);
 
-    std::cout << "[Debug] edad: " << registro.getEdad(registro.getFecha());
     archivo.guardaryreportar(registro);
     pause();
 }
@@ -61,25 +60,24 @@ void MCliente::eliminar(){
     int _id = cargarInt("Ingrese el ID: ");
     registro = archivo.buscarPorId(_id);
     clearW();
-    if(registro.getId() != -1){
-        std::cout << "==================================================================" << std::endl;
-        UICliente::showRow(registro);
-        std::cout << "==================================================================" << std::endl;
+    if(registro.getId() != -1 && registro.getEstado() == true){
+
+        UICliente::showRegister(registro);
+
         if(!UIBase::confirm("Esta seguro que desea eliminar el registro ?")){
             UIBase::clearW();
             std::cout << "No se elimino el registro." << std::endl;
-            UIBase::pause();
         }else{
             UIBase::clearW();
             registro.setEstado(false);
             archivo.modificar(registro,archivo.buscarPosicionPorId(_id));
             std::cout << "Registro eliminado." << std::endl;
-            UIBase::pause();
         }
     }
     else{
         std::cout << "No se encontró el registro." << std::endl;
     }
+    pause();
 }
 
 
@@ -110,17 +108,72 @@ void MCliente::ordenar(int seleccion){
     Cliente* registro = new Cliente[cantidad];
     archivo.leer(registro);
     switch(seleccion){
-        case 0: //ordenarNombre(registro,cantidad);
-                //listar(registro,cantidad);
+        case 0: ordenarPorNombre(registro,cantidad);
+                listar(registro,cantidad);
             break;
-        case 1: //ordenarEdad(registro,cantidad);
-                //listar(registro,cantidad);
+        case 1: ordenarPorEdad(registro,cantidad);
+                listar(registro,cantidad);
             break;
     }
     delete[] registro;
 }
 
+void MCliente::ordenarPorNombre(Cliente* registro, int cantidad){
+    Cliente aux;
+    for(int i = 0; i < cantidad; i++){
+        for(int j = 0; j < cantidad - 1; j++){
+            if(strcmp(registro[j].getNombre(), registro[j + 1].getNombre())> 0){
+                aux = registro[j];
+                registro[j] = registro[j+1];
+                registro[j+1] = aux;
+            }
+        }
+    }
 
+}
+void MCliente::ordenarPorEdad(Cliente* registro, int cantidad){
+    Cliente aux;
+    for(int i = 0; i < cantidad; i++){
+        for(int j = 0; j < cantidad - 1; j++){
+            if(registro[j].getFecha().getEdad(registro[j].getFecha()) > registro[j+1].getFecha().getEdad(registro[j+1].getFecha())){
+                aux = registro[j];
+                registro[j] = registro[j+1];
+                registro[j+1] = aux;
+            }
+        }
+    }
 
+}
+void MCliente::listar(Cliente* registro, int cantidad){
+    clearW();
+    UICliente::showHeader();
+    if(cantidad == 0){
+            std::cout << "No hay registros para mostrar";
+    return;
+    }
+    int c = 0;
+    for(int i = 0; i < cantidad; i ++){
+        UICliente::showRow(registro[i]);
+        c++;
+        if(c == 10){
+            c = 0;
+            pause();
+            clearW();
+            UICliente::showHeader();
+        }
+    }
 
+}
 
+Cliente MCliente::buscar(int _busqueda){
+    Cliente registro;
+    int cantidad = archivo.cantidadRegistros();
+    for(int i = 0; i < cantidad;i++){
+        registro = archivo.leer(i);
+        if(registro.getId() == _busqueda || registro.getDni() == _busqueda){
+            return registro;
+        }
+    }
+    registro.setId(-1);
+    return registro;
+}

@@ -22,11 +22,7 @@ void Domicilio::Cargar(){
 }
 
 void Domicilio::Mostrar(){
-    cout<<"CALLE: "<<calle<<endl;
-    cout<<"ALTURA: "<<altura<<endl;
-    cout<<"LOCALIDAD: "<<localidad<<endl;
-    cout<<"PROVINCIA: "<<provincia<<endl;
-    cout<<"CODIGO POSTAL: "<<codigoPostal<<endl;
+    cout << calle <<" "<< altura << ", " << localidad << ", " << provincia << ", " << codigoPostal<< "." << endl;
 }
 
 void Domicilio::setCalle(const char *c){

@@ -15,5 +15,10 @@ class MCliente : public Manager{
         void buscarPorId() override;
         void editar() override;
         void ordenar(int) override;
+        Cliente buscar(int);
+
+        void listar(Cliente*,int);
+        void ordenarPorNombre(Cliente*,int);
+        void ordenarPorEdad(Cliente*,int);
 
 };

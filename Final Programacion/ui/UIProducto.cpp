@@ -1,5 +1,6 @@
 #include"UIProducto.h"
 
+
 void UIProductos::showHeader(){
     std::cout << "PRODUCTOS" << std::endl;
     std::cout << "========================================================================" << std::endl;
@@ -20,8 +21,10 @@ void UIProductos::showRow(Producto& registro){
     << std::setw(15) << registro.getNombre()
     << std::setw(15) << registro.getMarca()
     << std::setw(15) << registro.getModelo()
-    << std::setw(1) << "$"
-    << std::setw(10) << registro.getPrecio()
+    << std::setw(1) << "$";
+    std::cout << std::fixed << std::setprecision(0)
+              << std::setw(10) << registro.getPrecio();
+    std::cout << std::left
     << std::setw(6) << registro.getStock()
     << std::setw(6) << registro.getAnio()
     << std::endl;

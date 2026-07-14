@@ -47,6 +47,9 @@ void Fecha::cargar(){
         std::cout << "Anio: "; std::cin >> _anio;
 
     }while(!esFechaValida(_dia,_mes,_anio));
+    dia = _dia;
+    mes = _mes;
+    anio = _anio;
 }
 
 
@@ -66,12 +69,9 @@ Fecha Fecha::getFechaActual(){
 }
 
 int Fecha::getEdad(Fecha fecha){
-    int edad;
-    Fecha hoy;
-    hoy.getFechaActual();
-    edad = hoy.getAnio() - fecha.getAnio();
-    if(fecha.getMes() > hoy.getMes()) return edad;
-    if(fecha.getMes() <= hoy.getMes() && fecha.getDia() <= hoy.getDia()) return edad-1;
+    Fecha hoy = getFechaActual();
+    int edad = hoy.getAnio() - anio;
+    if (hoy.getMes() < mes || (hoy.getMes() == mes && hoy.getDia() < dia)) --edad;
     return edad;
 
 }
