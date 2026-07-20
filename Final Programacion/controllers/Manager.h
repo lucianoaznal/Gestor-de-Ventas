@@ -18,7 +18,12 @@ class Manager : public UIBase{
         int cargarInt(std::string _msg);
         float cargarFloat(std::string _msg);
         void cargarChar(std::string _msg, char*, int _size);
+        void cambiar(std::string _msg, char*, int _size);
+        int cambiar(std::string _msg, int);
+        float cambiar(std::string _msg, float);
+        bool cambiar(std::string _msg, bool);
         bool cargarBool(std::string);
+
 
 
 };

@@ -2,6 +2,8 @@
 #include<iostream>
 #include"../include/rlutil.h"
 
+
+
 class UIBase{
     public:
         UIBase();
@@ -11,5 +13,6 @@ class UIBase{
         void pause();
         bool confirm(std::string);
         void message(std::string,int);
+
 
 };

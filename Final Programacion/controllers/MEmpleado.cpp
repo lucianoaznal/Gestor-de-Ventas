@@ -34,6 +34,7 @@ void MEmpleado::listar(){
 
 
 void MEmpleado::cargar(){
+    clearW();
     Empleado registro;
     Fecha nacimiento, ingreso;
     Domicilio domicilio;
@@ -109,3 +110,56 @@ void MEmpleado::editar(){}
 
 void MEmpleado::ordenar(int orden){
 }
+
+
+void MEmpleado::run(){
+
+    std::string opciones[6] = {
+     "1. Nuevo Empleado",
+     "2. Listar Empleados",
+     "3. Buscar por Id",
+     "4. Modificar Empleado",
+     "5. Eliminar Empleado",
+     "0.   << Atras"};
+     Menu menu("Empleados", opciones, 6);
+
+     int seleccion = 0;
+     do{
+        system("cls");
+        menu.dibujar();
+        seleccion = menu.seleccionar();
+        switch(seleccion){
+            case 0: break;
+            case 1: cargar();
+            break;
+            case 2: listar();
+            break;
+            case 3: buscarPorId();
+            break;
+            case 4: editar();
+            break;
+            case 5: eliminar();
+            break;
+            default: break;
+        }
+        pause();
+    }while(seleccion != 0);
+    clearW();
+}
+
+
+Empleado MEmpleado::buscar(int _busqueda){
+    Empleado registro;
+    int cantidad = archivo.cantidadRegistros();
+    for(int i = 0; i < cantidad;i++){
+        registro = archivo.leer(i);
+        if(registro.getId() == _busqueda || registro.getDni() == _busqueda){
+            return registro;
+        }
+    }
+    registro.setId(-1);
+    return registro;
+
+
+}
+

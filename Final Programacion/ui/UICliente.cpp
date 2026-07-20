@@ -30,7 +30,6 @@ void UICliente::showRegister(Cliente& reg){
     std::cout << "          FICHA TECNICA DEL CLIENTE      " << std::endl;
     std::cout << " ========================================" << std::endl;
 
-    // Datos heredados de Persona
     std::cout << " ID Cliente : " << reg.getId() << std::endl; //
     std::cout << " DNI        : " << reg.getDni() << std::endl;
     std::cout << " Nombre     : " << reg.getNombre() << std::endl;

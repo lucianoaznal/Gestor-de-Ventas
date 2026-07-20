@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,21 +34,58 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="controllers/App.cpp" />
+		<Unit filename="controllers/App.h" />
+		<Unit filename="controllers/MCliente.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="controllers/MCliente.h" />
+		<Unit filename="controllers/MEmpleado.cpp" />
+		<Unit filename="controllers/MEmpleado.h" />
 		<Unit filename="controllers/MProducto.cpp" />
 		<Unit filename="controllers/MProducto.h" />
+		<Unit filename="controllers/MVenta.cpp" />
+		<Unit filename="controllers/MVenta.h" />
 		<Unit filename="controllers/Manager.cpp" />
 		<Unit filename="controllers/Manager.h" />
+		<Unit filename="entities/Cliente.cpp" />
+		<Unit filename="entities/Cliente.h" />
+		<Unit filename="entities/Domicilio.cpp" />
+		<Unit filename="entities/Domicilio.h" />
+		<Unit filename="entities/Empleado.cpp" />
+		<Unit filename="entities/Empleado.h" />
+		<Unit filename="entities/Fecha.cpp" />
+		<Unit filename="entities/Fecha.h" />
+		<Unit filename="entities/Persona.cpp" />
+		<Unit filename="entities/Persona.h" />
+		<Unit filename="entities/Sesion.cpp" />
+		<Unit filename="entities/Sesion.h" />
+		<Unit filename="entities/Venta.cpp" />
+		<Unit filename="entities/Venta.h" />
 		<Unit filename="entities/producto.cpp" />
 		<Unit filename="entities/producto.h" />
+		<Unit filename="include/rlutil.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="repositories/FCliente.cpp" />
+		<Unit filename="repositories/FCliente.h" />
+		<Unit filename="repositories/FEmpleado.cpp" />
+		<Unit filename="repositories/FEmpleado.h" />
 		<Unit filename="repositories/FProducto.cpp" />
 		<Unit filename="repositories/FProducto.h" />
+		<Unit filename="repositories/FVenta.cpp" />
+		<Unit filename="repositories/FVenta.h" />
 		<Unit filename="ui/Menu.cpp" />
 		<Unit filename="ui/Menu.h" />
 		<Unit filename="ui/UIBase.cpp" />
 		<Unit filename="ui/UIBase.h" />
+		<Unit filename="ui/UICliente.cpp" />
+		<Unit filename="ui/UICliente.h" />
+		<Unit filename="ui/UIEmpleado.cpp" />
+		<Unit filename="ui/UIEmpleado.h" />
 		<Unit filename="ui/UIProducto.cpp" />
 		<Unit filename="ui/UIProducto.h" />
+		<Unit filename="ui/UIVenta.h" />
+		<Unit filename="ui/Venta.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

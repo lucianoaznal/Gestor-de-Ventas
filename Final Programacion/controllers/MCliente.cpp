@@ -34,6 +34,7 @@ void MCliente::listar(){
 
 
 void MCliente::cargar(){
+    clearW();
     Cliente registro;
     Fecha fecha;
     Domicilio domicilio;
@@ -176,4 +177,38 @@ Cliente MCliente::buscar(int _busqueda){
     }
     registro.setId(-1);
     return registro;
+}
+void MCliente::run(){
+
+    std::string opciones[6] = {
+     "1. Nuevo Cliente",
+     "2. Listar Clientes",
+     "3. Buscar por Id",
+     "4. Modificar Cliente",
+     "5. Eliminar Cliente",
+     "0.   << Atras"};
+     Menu menu("Clientes", opciones, 6);
+
+     int seleccion = 0;
+     do{
+        system("cls");
+        menu.dibujar();
+        seleccion = menu.seleccionar();
+        switch(seleccion){
+            case 0: break;
+            case 1: cargar();
+            break;
+            case 2: listar();
+            break;
+            case 3: buscarPorId();
+            break;
+            case 4: editar();
+            break;
+            case 5: eliminar();
+            break;
+            default: break;
+        }
+        pause();
+    }while(seleccion != 0);
+    clearW();
 }

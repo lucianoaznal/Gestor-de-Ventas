@@ -8,6 +8,7 @@ class Cliente : public Persona{
         void setId(int);
         int getId();
         bool isValido()const;
+        void mostrar();
     private:
         int ID;
 };

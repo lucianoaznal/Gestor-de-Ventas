@@ -32,3 +32,11 @@ void UIBase::pause(){
     std::cout << "Presione una tecla para continuar...";
     std::cin.get();
 }
+/*
+void UIBase::footer(){
+    std::cout << "Empleado: " << Sesion::getEmpleado().getApellido()
+              << ", " << Sesion::getEmpleado().getNombre() <<  std::endl
+              << "ID# " << Sesion::getEmpleado().getId() << std::endl
+              << "---------------------------------------" << std::endl << std::endl;
+
+}*/

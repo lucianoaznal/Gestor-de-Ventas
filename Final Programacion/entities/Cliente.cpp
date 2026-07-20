@@ -11,3 +11,7 @@ bool Cliente::isValido()const {
     return true;
     ///TODO: logica incompleta
 }
+void Cliente::mostrar(){
+    std::cout << "ID #" << ID << ". " <<  nombre << ", " << apellido << std::endl;
+
+}

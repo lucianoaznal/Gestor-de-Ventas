@@ -6,6 +6,10 @@ Producto::Producto()
 
 }
 
+void Producto::mostrar(){
+    std::cout << nombre << " " << modelo << " " << anio << " by " << marca << std::endl;
+
+}
 bool Producto::isValido()const {
     return true;
     ///TODO: logica incompleta

@@ -5,8 +5,18 @@
 Menu::Menu(){
 
 }
-Menu::~Menu(){
 
+Menu::Menu(std::string titulo, std::string* opciones, int cantidad){
+    _titulo = titulo;
+    _cantidad = cantidad;
+    _opciones = new std::string[_cantidad];
+    for(int i = 0; i < _cantidad; i ++){
+        _opciones[i] = opciones[i];
+    }
+    _seleccion = 0;
+}
+Menu::~Menu(){
+    //delete[] _opciones;
 }
 
 void Menu::run(){
@@ -17,15 +27,16 @@ void Menu::run(){
         ejecutar(seleccion);
 
     }while(seleccion != 0);
-    UIBase::message("Saliendo del sistema...", 0);
+
 }
-/*
+
 int Menu::seleccionar(){
     int i;
+    std::cout << std::endl <<  "> ";
     std::cin >> i;
     return i;
 }
-*/
+
 void Menu::ejecutar(int seleccion){
     switch(seleccion){
     case 0:return;
@@ -33,27 +44,20 @@ void Menu::ejecutar(int seleccion){
     }
 
 }
-void Menu::dibujar(){
 
-}
-int Menu::seleccionar(){
-    int seleccion;
-    switch(rlutil::getkey()){
-        case rlutil::KEY_UP:
-            return -1;
-            break;
-        case rlutil::KEY_DOWN:
-            return 1;
-            break;
-        case rlutil::KEY_ENTER:
-            return -2;
-            break;
-        case rlutil::KEY_ESCAPE:
-            return 0;
-            break;
+
+void Menu::dibujar(){
+    clearW();
+    std::cout << _titulo << std::endl
+    << "=====================" << std::endl;
+    for(int i = 0; i < _cantidad; i++){
+        if(i == _cantidad -1){
+            std::cout << std::endl
+            << "=====================" << std::endl;
+        }
+        std::cout << _opciones[i] << std::endl;
     }
 
-
-
-    return seleccion;
 }
+
+

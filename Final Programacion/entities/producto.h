@@ -1,4 +1,5 @@
 #pragma once
+#include<iostream>
 #include<cstring>
 
 class Producto{
@@ -18,6 +19,7 @@ class Producto{
     public:
         Producto();
         bool isValido() const;
+        void mostrar();
 
         void setId(int);
         void setNombre(const char*);

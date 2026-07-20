@@ -14,6 +14,7 @@ class Empleado : public Persona{
         Fecha getFechaIngreso();
 
         bool isValido()const;
+        void mostrar();
     private:
         int ID;
         int categoria;

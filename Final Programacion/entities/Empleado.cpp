@@ -18,3 +18,8 @@ void Empleado::setFechaIngreso(Fecha& _fecha){fechaIngreso = _fecha;}
 
 int Empleado::getCategoria(){return categoria;}
 Fecha Empleado::getFechaIngreso(){return fechaIngreso;}
+
+void Empleado::mostrar(){
+    std::cout << "ID #" << ID << ". " <<  nombre << ", " << apellido << std::endl;
+
+}

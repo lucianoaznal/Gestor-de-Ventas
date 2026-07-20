@@ -1,7 +1,9 @@
+#pragma once
 #include"Manager.h"
 #include"../repositories/FProducto.h"
 #include"../entities/producto.h"
 #include"../ui/UIProducto.h"
+#include"../ui/Menu.h"
 
 class MProducto : public Manager{
     private:
@@ -15,6 +17,8 @@ class MProducto : public Manager{
         void buscarPorId() override;
         void editar() override;
         void ordenar(int) override;
+        void run();
+        Producto buscar(int);
 
 
         void ordenarFecha(Producto*,int);

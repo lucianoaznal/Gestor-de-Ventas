@@ -4,6 +4,7 @@
 
 class Sesion {
 private:
+    Sesion();
     static Empleado _empleadoLogueado;
     static bool _iniciada;
 

@@ -1,16 +1,14 @@
 # depslib dependency file v1.0
-1784007417 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\main.cpp
+1784580431 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\main.cpp
 	<iostream>
-	"controllers/MVenta.h"
-	"repositories/FEmpleado.h"
-	"entities/Empleado.h"
-	"ui/Menu.h"
-	"entities/Sesion.h"
+	"controllers/App.h"
+	"controllers/MProducto.h"
 
-1783911500 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\producto.cpp
+1784584456 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\producto.cpp
 	"producto.h"
 
-1783911443 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\producto.h
+1784584059 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\producto.h
+	<iostream>
 	<cstring>
 
 1783726050 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\data\fproducto.cpp
@@ -27,25 +25,26 @@
 1783901990 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\manager.cpp
 	"Manager.h"
 
-1783969932 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\manager.h
+1784589182 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\manager.h
 	"../ui/UIBase.h"
 	<iostream>
 
-1783952443 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uibase.h
+1784201722 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uibase.h
 	<iostream>
 	"../include/rlutil.h"
 
-1783952552 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uibase.cpp
+1784201722 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uibase.cpp
 	"UIBase.h"
 
-1783982366 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mproducto.cpp
+1784584025 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mproducto.cpp
 	"MProducto.h"
 
-1783913803 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mproducto.h
+1784583949 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mproducto.h
 	"Manager.h"
 	"../repositories/FProducto.h"
 	"../entities/producto.h"
 	"../ui/UIProducto.h"
+	"../ui/Menu.h"
 
 1783983417 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uiproducto.cpp
 	"UIProducto.h"
@@ -56,10 +55,10 @@
 	<iomanip>
 	<iostream>
 
-1783952503 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\menu.cpp
+1784558407 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\menu.cpp
 	"Menu.h"
 
-1783952503 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\menu.h
+1784202663 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\menu.h
 	<iostream>
 	"UIBase.h"
 
@@ -99,10 +98,10 @@
 	"Domicilio.h"
 	"Fecha.h"
 
-1783960953 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\cliente.cpp
+1784581932 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\cliente.cpp
 	"Cliente.h"
 
-1783960953 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\cliente.h
+1784581930 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\cliente.h
 	"Persona.h"
 
 1783979489 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fcliente.cpp
@@ -111,17 +110,18 @@
 1783960747 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fcliente.h
 	"../entities/Cliente.h"
 
-1784006478 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mcliente.cpp
+1784560381 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mcliente.cpp
 	"MCliente.h"
 	"../ui/UICliente.h"
 
-1784006489 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mcliente.h
+1784560315 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mcliente.h
 	"Manager.h"
 	"../repositories/FCliente.h"
 	"../entities/Cliente.h"
 	"../ui/UICliente.h"
+	"../ui/menu.h"
 
-1783981693 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uicliente.cpp
+1784580729 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uicliente.cpp
 	"UICliente.h"
 
 1783973098 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uicliente.h
@@ -130,10 +130,10 @@
 	<iomanip>
 	<iostream>
 
-1783986260 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\empleado.cpp
+1784581932 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\empleado.cpp
 	"Empleado.h"
 
-1783986296 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\empleado.h
+1784581770 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\empleado.h
 	"Persona.h"
 
 1783987791 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fempleado.cpp
@@ -151,15 +151,16 @@
 	<iomanip>
 	<iostream>
 
-1783987791 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mempleado.cpp
+1784581770 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mempleado.cpp
 	"MEmpleado.h"
 	"../ui/UIEmpleado.h"
 
-1783987113 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mempleado.h
+1784581770 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mempleado.h
 	"Manager.h"
 	"../repositories/FEmpleado.h"
 	"../entities/Empleado.h"
 	"../ui/UIEmpleado.h"
+	"../ui/menu.h"
 
 1783991083 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\venta.cpp
 	"Venta.h"
@@ -173,21 +174,86 @@
 1783991144 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fventa.h
 	"../entities/Venta.h"
 
-1784008574 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mventa.cpp
+1784587840 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mventa.cpp
 	"MVenta.h"
 
-1784007349 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mventa.h
+1784577509 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mventa.h
 	"Manager.h"
 	"../repositories/FVenta.h"
 	"../repositories/FEmpleado.h"
 	"MCliente.h"
+	"../ui/Menu.h"
+	"../ui/UIVenta.h"
 	"../entities/Empleado.h"
 	"../entities/Cliente.h"
 	"../entities/Sesion.h"
+	"MDetalle.h"
 
-1784007599 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\sesion.h
+1784172525 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\sesion.h
 	"Empleado.h"
 
-1784007599 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\sesion.cpp
+1784172560 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\sesion.cpp
 	"Sesion.h"
+
+1784579143 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\venta.cpp
+	"UIVenta.h"
+
+1784583113 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uiventa.h
+	"UIBase.h"
+	"../entities/Venta.h"
+	"../controllers/MCliente.h"
+	"../controllers/MEmpleado.h"
+	"../controllers/MDetalle.h"
+	<iomanip>
+	<iostream>
+
+1784562112 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\app.cpp
+	"App.h"
+
+1784555717 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\app.h
+	"../repositories/FEmpleado.h"
+	"../entities/Sesion.h"
+	"MCliente.h"
+	"MEmpleado.h"
+	"MVenta.h"
+	"MProducto.h"
+	"../ui/Menu.h"
+
+1784564173 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\detalleventa.c
+
+1784566693 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\detalleventa.cpp
+	"DetalleVenta.h"
+
+1784566693 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\entities\detalleventa.h
+
+1784565403 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fdetalle.cpp
+	"FDetalle.h"
+
+1784566477 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\repositories\fdetalle.h
+	<iostream>
+	"../entities/DetalleVenta.h"
+
+1784583385 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mdetalle.h
+	"Manager.h"
+	"../entities/DetalleVenta.h"
+	"../repositories/FDetalle.h"
+	"../repositories/FProducto.h"
+	"../ui/Menu.h"
+	"../ui/UIDetalle.h"
+
+1784584286 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\controllers\mdetalle.cpp
+	"MDetalle.h"
+
+1784584641 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uiventa.cpp
+	"UIVenta.h"
+
+1784584143 c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uidetalle.h
+	"UIBase.h"
+	"../entities/DetalleVenta.h"
+	"../controllers/MProducto.h"
+	<iomanip>
+	<iostream>
+
+1784584641 source:c:\users\noxi-pc\onedrive\desktop\programacion 2\final programacion\ui\uidetalle.cpp
+	"UIDetalle.h"
 

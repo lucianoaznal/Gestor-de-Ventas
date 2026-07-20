@@ -13,7 +13,7 @@ void MProducto::listar(){
     return;
     }
 
-    int c;
+    int c = 0;
     UIProductos::showHeader();
     for(int i = 0; i < paginador; i++){
         registro = archivo.leer(i);
@@ -22,7 +22,7 @@ void MProducto::listar(){
             c++;
         }
 
-        if(c == 5){
+        if(c == 10){
             c = 0;
             pause();
             clearW();
@@ -71,7 +71,6 @@ void MProducto::eliminar(){
     else{
         std::cout << "No se encontró el registro." << std::endl;
     }
-    pause();
 }
 
 
@@ -86,7 +85,6 @@ void MProducto::buscarPorId(){
     }else{
         std::cout << "No hay resultados a tu busqueda." << std::endl;
     }
-    pause();
 }
 void MProducto::editar(){
 
@@ -166,3 +164,55 @@ void MProducto::listar(Producto* registro, int cantidad){
         }
     }
 }
+void MProducto::run(){
+
+    std::string opciones[6] = {
+     "1. Nuevo producto",
+     "2. Listar Producto",
+     "3. Buscar por Id",
+     "4. Modificar Producto",
+     "5. Eliminar Producto",
+     "0.   << Atras"};
+     Menu menu("Productos", opciones, 6);
+
+     int seleccion = 0;
+     do{
+        system("cls");
+        menu.dibujar();
+        seleccion = menu.seleccionar();
+        switch(seleccion){
+            case 0: return; break;
+            case 1: cargar();
+            break;
+            case 2: listar();
+            break;
+            case 3: buscarPorId();
+            break;
+            case 4: editar();
+            break;
+            case 5: eliminar();
+            break;
+            default: break;
+        }
+        pause();
+    }while(seleccion != 0);
+    clearW();
+}
+
+Producto MProducto::buscar(int _busqueda){
+    Producto registro;
+    int cantidad = archivo.cantidadRegistros();
+    for(int i = 0; i < cantidad;i++){
+        registro = archivo.leer(i);
+        if(registro.getId() == _busqueda){
+            return registro;
+        }
+    }
+    registro.setId(-1);
+    return registro;
+
+}
+
+
+
+

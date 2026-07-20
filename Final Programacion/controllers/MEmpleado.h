@@ -3,6 +3,7 @@
 #include"../repositories/FEmpleado.h"
 #include"../entities/Empleado.h"
 #include"../ui/UIEmpleado.h"
+#include"../ui/menu.h"
 
 class MEmpleado : public Manager{
     private:
@@ -15,6 +16,9 @@ class MEmpleado : public Manager{
         void buscarPorId() override;
         void editar() override;
         void ordenar(int) override;
+        void run();
+        Empleado buscar(int);
+
 
 
 };
